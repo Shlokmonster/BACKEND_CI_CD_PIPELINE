@@ -24,6 +24,9 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
+      - name: Auto-fix with ESLint
+        run: npx eslint . --fix
+      
       - name: Run Tests
         run: npm test
 
